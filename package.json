@@ -15,5 +15,8 @@
   "bugs": {
     "url": "https://github.com/bwuphan/caesarCipher/issues"
   },
-  "homepage": "https://github.com/bwuphan/caesarCipher#readme"
+  "homepage": "https://github.com/bwuphan/caesarCipher#readme",
+  "devDependencies": {
+    "jasmine": "^3.6.4"
+  }
 }
