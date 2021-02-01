@@ -4,11 +4,15 @@ describe('caesarCipher test', () => {
     expect(cipher('THE QUICK BROWN FOX JUMPS OVER THE LAZY DOG')).toEqual('THE QUICK BROWN FOX JUMPS OVER THE LAZY DOG');
   });
 
-  it('shifts the string right if a positive number is passed in.', () => {
-    expect(cipher('THE QUICK BROWN FOX JUMPS OVER THE LAZY DOG')).toEqual('QEB NRFZH YOLTK CLU GRJMP LSBO QEB IXWV ALD');
+  it('returns same string if shift is 0', () => {
+    expect(cipher('THE QUICK BROWN FOX JUMPS OVER THE LAZY DOG', 0)).toEqual('THE QUICK BROWN FOX JUMPS OVER THE LAZY DOG');
   });
 
   it('shifts the string right if a positive number is passed in.', () => {
-    expect(cipher('THE QUICK BROWN FOX JUMPS OVER THE LAZY DOG')).toEqual('WKH TXLFN EURZQ IRA MXPSV RYHU WKH ODCB GRJ');
+    expect(cipher('THE QUICK BROWN FOX JUMPS OVER THE LAZY DOG', 3)).toEqual('QEB NRFZH YOLTK CLU GRJMP LSBO QEB IXWV ALD');
+  });
+
+  it('shifts the string left if negative number is passed in.', () => {
+    expect(cipher('THE QUICK BROWN FOX JUMPS OVER THE LAZY DOG', -10)).toEqual('DRO AESMU LBYGX PYH TEWZC YFOB DRO VKJI NYQ');
   });  
 });
