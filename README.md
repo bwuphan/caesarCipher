@@ -1,4 +1,4 @@
-# caesarCipher
+# Caesar Cipher
 
 ### Installation
 `npm install`
