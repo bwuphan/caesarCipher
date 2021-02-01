@@ -1,5 +1,7 @@
 # caesarCipher
 
-## To install: run `npm install`
+### Installation
+`npm install`
 
-## To test: run `npm test`
+### Testing
+`npm test`
